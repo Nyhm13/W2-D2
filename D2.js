@@ -122,7 +122,7 @@ if (variabile1 > variabile2 && variabile1 > variabile3) {
     middle = variabile2;
     lowest = variabile1;
   }
-  console.log(`Ordinamento: ${highest}, ${middle}, ${lowest}`);
+  console.log('Ordinamento', highest, middle, lowest);
 }
 
 /* ESERCIZIO 8
@@ -131,24 +131,23 @@ if (variabile1 > variabile2 && variabile1 > variabile3) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let value = 23;
-if (typeof value === 'number') {
-  console.log('The value is a number');
+if (typeof value === "number") {
+  console.log("The value is a number");
 } else {
-  console.log('The value is not a number');
+  console.log("The value is not a number");
 }
-console.log (typeof value)
+console.log(typeof value);
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-let evenOrOdd=10
-let result= evenOrOdd%2
-if(result>0) {
-  console.log('questo numero e dispari')
-}
-else {
-  console.log ('questo numero è pari')
+let evenOrOdd = 10;
+let result = evenOrOdd % 2;
+if (result > 0) {
+  console.log("questo numero e dispari");
+} else {
+  console.log("questo numero è pari");
 }
 
 /* ESERCIZIO 10
@@ -165,12 +164,21 @@ else {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let val = 7;
-if ((val < 10) && (val>5)) {
+if ((val < 10) && (val > 5)) {
   console.log("Meno di 10");
 } else if (val < 5) {
   console.log("Meno di 5");
 } else {
   console.log("Uguale a 10 o maggiore");
+}
+/* oppure*/
+let val1 = 7
+if (val1 < 5) {
+  console.log('Meno di 5')
+} else if (val < 10) {
+  console.log('Meno di 10')
+} else {
+  console.log('Uguale a 10 o maggiore')
 }
 
 /* ESERCIZIO 11
@@ -207,16 +215,24 @@ console.log(me);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const numbers1to10 = [];
-numbers1to10.push (1,2,3,4,5,6,7,8,9,10)
-console.log(numbers1to10);
-
+let myArray = [];
+myArray.push(1);
+myArray.push(2);
+myArray.push(3);
+myArray.push(4);
+myArray.push(5);
+myArray.push(6);
+myArray.push(7);
+myArray.push(8);
+myArray.push(9);
+myArray.push(10);
+console.log(myArray);
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-numbers1to10.splice(9, 1, 100);
-console.log(numbers1to10);
-numbers1to10[9] =100
-console.log ()
+myArray.splice(9, 1, 100);
+console.log(myArray);
+myArray[9] = 100;
+console.log();
