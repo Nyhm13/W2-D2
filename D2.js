@@ -165,7 +165,7 @@ else {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let val = 7;
-if (val < 10) {
+if ((val < 10) && (val>5)) {
   console.log("Meno di 10");
 } else if (val < 5) {
   console.log("Meno di 5");
@@ -207,7 +207,8 @@ console.log(me);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const numbers1to10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbers1to10 = [];
+numbers1to10.push (1,2,3,4,5,6,7,8,9,10)
 console.log(numbers1to10);
 
 /* ESERCIZIO 15
@@ -215,5 +216,7 @@ console.log(numbers1to10);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-numbers1to10.splice(9, 1, 1000);
+numbers1to10.splice(9, 1, 100);
 console.log(numbers1to10);
+numbers1to10[9] =100
+console.log ()
